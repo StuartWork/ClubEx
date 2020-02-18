@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700);
+
+body { 
+	font-family: 'Open Sans', sans-serif;
+}
+
+#slider {
+	margin-top: 76px;
+}
+
+a.dropdown-item:hover {
+	background-color: lightgreen;
+}
+
+footer {
+	color: white;
+}
+
+section {
+	margin: 0 10%;
+}
+
+h1 {
+	text-align: center;
+}

@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700);
+
+body { 
+	margin: 10% 20%;
+	/*font-family: 'Open Sans', sans-serif;*/
+	background-color: lightblue;
+}
+div {
+	margin-top: 20px;
+	background-color: white;
+}
+section {	
+	background-color: white;
+	padding-bottom: 5%;
+}
+#login,#signup {
+	margin-left: 42%;
+	width: 15%;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 150%;
+	border-radius: 5%;
+	color: white;
+	background-color: gray;
+}
+#login {
+	margin-top: 40px;
+}
+h1 {
+	color: gold;
+	margin-left: 40%;
+	font-size: 400%;
+	padding-top: 6%;
+	padding-bottom: 2%;
+	text-shadow: 1px 1px 1px black;
+}
+h3 {
+	text-align: center;
+	color: blue;
+}
+img {
+	float: left;
+}
+#signup:hover, #login:hover {
+	background-color: green;
+	color: white;
+	box-shadow: 10px 10px 10px grey;
+	
+}
