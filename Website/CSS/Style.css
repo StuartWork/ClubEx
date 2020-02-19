@@ -3,7 +3,8 @@
 body { 
 	margin: 5% 20%;
 	/*font-family: 'Open Sans', sans-serif;*/
-	background-color: lightblue;
+	background-image: url("../images/FreeWeights.jpg");
+	
 }
 h1 {
 	color: gold;
@@ -16,4 +17,7 @@ h1 {
 h3 {
 	text-align: center;
 	color: blue;
+}
+a{
+	color: yellow;
 }
