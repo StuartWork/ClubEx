@@ -4,15 +4,35 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<!-- Font awesomee icons CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- CSS files have to go under Bootstrap CSS or Bootstrap CSS will over ride them-->
 	<link rel="stylesheet" href="CSS\Style.css" />
 	
     <title>Sign up</title>
   </head>
+  
   <body>
-    <h1>Dinner time!</h1>
+	<!-- Bootstrap responsive navigation bar changes to hamburger icon-->
+	<nav class="navbar navbar-expand-lg">  
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Bootstrap navigation bar with navigation button on the right-->
+		<div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
+			<ul class="navbar-nav col-md-0 ml-auto">
+				<!-- have to add <li></li> to ever second one or Bootstrap will put them vertical-->
+				<li class="nav-item">
+					<a class="nav-link" href="Home.html"><i class="fa fa-user"></i> Sign In</a>
+					<li><a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+					<a class="nav-link" href="ContactUs.html"><i class="fa fa-comments-o"></i> Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
