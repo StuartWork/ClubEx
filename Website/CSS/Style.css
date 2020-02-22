@@ -24,7 +24,6 @@ a{
 
 #carousel {	
 	background-color: grey;
-	padding-bottom: 5%;
 }
 
 h2{
@@ -63,6 +62,37 @@ h2{
 	border-radius: 50%;
 }
 
-#Dislike, #Like{
+#likes{
+	height:5px;
+	width:50%;
+	background:green;
+	float:left;
+	
+}
+#dislikes{
+	height:5px;
+	width:50%;
+	background:red;
+	float:right;
+}
+
+.LikeButton {
+	width: 50%;
+	float: left;
+}
+
+.DislikeButton {
+	width: 50%;
+	float: right;
+}
+
+#caption{
+	margin-top: 1%;
+	margin-right: 70%;
+}
+
+#buttons{
+	width: 25%;
+	margin-top: 1%;
 	float: right;
 }
