@@ -52,6 +52,7 @@
 						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
 							<div id="carousel-example" data-interval="false" class="carousel slide">
 									<div class="carousel-inner">
+
 										<div class="carousel-item active">
 											<div id="description">
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
@@ -59,13 +60,18 @@
 											<div class="embed-responsive embed-responsive-16by9">
 												<iframe id="iframe" class="embed-responsive-item" src="https://www.youtube.com/embed/965qZScyVVI" allowfullscreen></iframe>
 											</div>
-											<div id="description">
-												<p>Exercise Caption</p>	
-												<button id="Like" type="Text" onclick="Like()" name="Like">Like</button>
-												<button id="Dislike" type="Text" onclick="Dislike()">Dislike</button>
-													<p><a id="clicks"> 0 </a> Views</p>
+												<div id="buttons">
+													<div id="likes"></div>
+													<div id="dislikes"></div>
 
-											</div>
+													<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+													<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+												</div>
+
+												<div id="caption">
+													<p>Exercise Caption</p>	
+													<p><a id="clicks"> 0 </a> Views</p>
+												</div>
 										</div>
 
 										<div class="carousel-item">
@@ -75,11 +81,17 @@
 											<div class="embed-responsive embed-responsive-16by9">
 												<iframe id="iframe2" class="embed-responsive-item" src="https://www.youtube.com/embed/VHyGqsPOUHs" allowfullscreen></iframe>
 											</div>
-											<div id="description">
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
 												<p>Exercise Caption</p>	
-												<button id="Like" type="Text" onclick="Like()" name="Like">Like</button>
-												<button id="Dislike" type="Text" onclick="Dislike()">Dislike</button>
-													<p><a id="clicks"> 0 </a> Views</p>
+												<p><a id="clicks"> 0 </a> Views</p>
 											</div>
 										</div>
 
@@ -90,12 +102,18 @@
 											<div class="embed-responsive embed-responsive-16by9">
 												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uO5OkT6hPok" allowfullscreen></iframe>
 											</div>
-											<div id="description">
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
 												<p>Exercise Caption</p>	
-												<button type="Text" name="Like">Like</button>
-												<button type="Text" name="Dislike" id="login">Dislike</button>
-												<p>12 Views</p>
-											</div>	
+												<p><a id="clicks"> 0 </a> Views</p>
+											</div>
 										</div>
 									</div>
 										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
@@ -113,6 +131,286 @@
 			</div>
 		</div>
 	</div>
+	
+	<div id="carousel">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2>Boxing</h2>
+						<br>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<div id="carousel-example" data-interval="false" class="carousel slide">
+									<div class="carousel-inner">
+
+										<div class="carousel-item active">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe" class="embed-responsive-item" src="https://www.youtube.com/embed/965qZScyVVI" allowfullscreen></iframe>
+											</div>
+												<div id="buttons">
+													<div id="likes"></div>
+													<div id="dislikes"></div>
+
+													<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+													<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+												</div>
+
+												<div id="caption">
+													<p>Exercise Caption</p>	
+													<p><a id="clicks"> 0 </a> Views</p>
+												</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe2" class="embed-responsive-item" src="https://www.youtube.com/embed/VHyGqsPOUHs" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
+												<p>Exercise Caption</p>	
+												<p><a id="clicks"> 0 </a> Views</p>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uO5OkT6hPok" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
+												<p>Exercise Caption</p>	
+												<p><a id="clicks"> 0 </a> Views</p>
+											</div>
+										</div>
+									</div>
+										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										
+										<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="carousel">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2>Pilates</h2>
+						<br>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<div id="carousel-example" data-interval="false" class="carousel slide">
+									<div class="carousel-inner">
+
+										<div class="carousel-item active">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe" class="embed-responsive-item" src="https://www.youtube.com/embed/965qZScyVVI" allowfullscreen></iframe>
+											</div>
+												<div id="buttons">
+													<div id="likes"></div>
+													<div id="dislikes"></div>
+
+													<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+													<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+												</div>
+
+												<div id="caption">
+													<p>Exercise Caption</p>	
+													<p><a id="clicks"> 0 </a> Views</p>
+												</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe2" class="embed-responsive-item" src="https://www.youtube.com/embed/VHyGqsPOUHs" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
+												<p>Exercise Caption</p>	
+												<p><a id="clicks"> 0 </a> Views</p>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uO5OkT6hPok" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
+												<p>Exercise Caption</p>	
+												<p><a id="clicks"> 0 </a> Views</p>
+											</div>
+										</div>
+									</div>
+										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										
+										<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="carousel">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2>Yoga</h2>
+						<br>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<div id="carousel-example" data-interval="false" class="carousel slide">
+									<div class="carousel-inner">
+
+										<div class="carousel-item active">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe" class="embed-responsive-item" src="https://www.youtube.com/embed/965qZScyVVI" allowfullscreen></iframe>
+											</div>
+												<div id="buttons">
+													<div id="likes"></div>
+													<div id="dislikes"></div>
+
+													<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+													<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+												</div>
+
+												<div id="caption">
+													<p>Exercise Caption</p>	
+													<p><a id="clicks"> 0 </a> Views</p>
+												</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe2" class="embed-responsive-item" src="https://www.youtube.com/embed/VHyGqsPOUHs" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
+												<p>Exercise Caption</p>	
+												<p><a id="clicks"> 0 </a> Views</p>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uO5OkT6hPok" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes"></div>
+												<div id="dislikes"></div>
+
+												<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+												<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+											</div>
+
+											<div id="caption">
+												<p>Exercise Caption</p>	
+												<p><a id="clicks"> 0 </a> Views</p>
+											</div>
+										</div>
+									</div>
+										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										
+										<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="JS/Content.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -122,5 +420,6 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+	
 	</body>
 </html>

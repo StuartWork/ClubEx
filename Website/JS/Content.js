@@ -1,5 +1,7 @@
 var clicks = 0;
 var fired = false;
+var likes = 0;
+var dislikes = 0;
 
 var listener = addEventListener('blur', function() {
 	if(document.activeElement === document.getElementById('iframe')) {
@@ -12,11 +14,13 @@ var listener = addEventListener('blur', function() {
 });
 
 function Like(){
-    document.getElementById('iframe').pauseVideo();
+    likes ++;
+    calculateBar();
 }
 
 function Dislike(){
-    document.getElementById('iframe').play();
+    dislikes ++;
+    calculateBar();
 }
 
 function Views(){
@@ -28,3 +32,13 @@ function test(){
     fired = false;
 }
 
+function calculateBar(){
+    var total = likes + dislikes;
+    var percentageLikes = (likes/total)*100;
+    var percentageDislike = (dislikes/total)*100;
+    document.getElementById("likes").style.width= percentageLikes.toString()+"%";
+    document.getElementById("dislikes").style.width= percentageDislike.toString()+"%";
+
+    document.getElementById('LikeButton').value="Like("+likes.toString()+")";
+    document.getElementById('DislikeButton').value="Disike("+dislikes.toString()+")";
+}
