@@ -96,22 +96,22 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the terms, video titles:*/
-var suggestions = ["Abhyasa","Abs","Acarya","Advaita","Aerobics","Aerobics Action","Aerobics Career","Aerobics Music",
-					"Aerobics Clothes","Ahamkara","Ahimsa","Akasha","Amrita","Ananda","Anga","Arjuna","Asana","Ashrama",
+var suggestions = ["15-Minute Beginner's At-Home Cardio Workout","20min-cardio-Aerobics","Abhyasa","Abs","Acarya","Advaita","Aerobics","Aerobics Action","Aerobics Career","Aerobics Music",
+					"Aerobics Clothes","Aerobics dance exercise","Aerobics for beginners","Ahamkara","Ahimsa","Akasha","Amrita","Ananda","Anga","Arjuna","Asana","Ashrama",
 					"Ashta-anga-yoga","Ashtanga-yoga","Asmita","Atman","Avadhuta","Avidya","Ayurveda","Ayur-veda",
-					"B.E.A.M.","Bandha","Bantamweight","Barrels","Below the belt","Bhagavad Gita","Bhagavata-Purana","Bhakta",
+					"B.E.A.M.","Bandha","Bantamweight","Barrels","Beginner's At-Home Cardio Workout","Below the belt","Bhagavad Gita","Bhagavata-Purana","Bhakta",
 					"Bhakti","Bhakti-Sutra","Bhakti Yoga","Bindu","Blow","Bodhi","Bodhisattva","Body-mind connection",
 					"Body punches","Boxer's handshake","Boxing","Bolo punch","Bout","Brahma","Brahmacharya","Brahman",
 					"Brahmana","Brawler","Breadbasket","Breathe Energize Align Move","Breathing 100s","Buddha","Buddhi",
 					"Cadillac","Cakra","Card","Catchweight","Centering","Chair aerobics","Chakra","Chin tucked",
-					"Choreography Aerobics","Cin-mudra","Cit","Citta","Clinch","Combination","Contrology","Corner",
+					"Choreography Aerobics","Cin-mudra","Cit","Citta","Class FitSugar","Clinch","Combination","Contrology","Corner",
 					"Corner man","Count","Counter punch","Cruiserweight","Curacao","Darshana","Deva","Devi","Dharana",
 					"Dharma","Dhyana","Diksha","Disqualification","Down and out","Down for the count","Draw","Drishti",
 					"Duhkha","Fall through the ropes","Featherweight","Feint","First-generation teacher","Flyweight",
 					"Foot on the walk","Fouls","Gate","Gayatri-mantra","Gheranda-Samhita","Glass Jaw","Gloves","Goraksha",
 					"Go the distance","Go to the scorecards","Granthi","Guna","Guru","Guru-bhakti","Guru-Gita",
 					"Guru-Yoga","Hamsa","Hatha Yoga","Hatha-Yoga-Pradipika","Haymaker","Headbutt","Headlights","Heavyweight",
-					"Hip belt","Hiranyagarbha","Hitting on the break","Hook","Ida-nadi","Imprinting","Inner eye",
+					"Hi-Low cardio aerobics-burn over 700 calories","Hip belt","Hiranyagarbha","Hitting on the break","Hook","Ida-nadi","Imprinting","Inner eye",
 					"Inside fighter","Intercostal muscles","Ishvara","Ishvara-pranidhana","Jab","Jaina","Japa","Jiva-atman",
 					"jivatman","Jivan-mukta","Jivan-mukti","Jnana","Jnana-Yoga","Junior heavyweight","Kaivalya","Kali",
 					"Kali-yuga","Kama","Kapila","Karman","karma","Karma Yoga","Karuna","Khecari-mudra","Kickboxing Aerobics",
@@ -138,7 +138,7 @@ var suggestions = ["Abhyasa","Abs","Acarya","Advaita","Aerobics","Aerobics Actio
 					"Super bantamweight","Super featherweight","Super flyweight","Super lightweight","Super middleweight",
 					"Super welterweight","Sushumna-nadi","Sutra","Svadhyaya","Take a dive","Tantra","Tapas","Tattva",
 					"Technical draw","TKO","Technical knockout","Throw in the towel","Triangles","Turiya","Two-way energy",
-					"Undercard","Universal Reformer","Upanishad","Upaya","Uppercut","Vairagya","Vertebrae","Water Aerobics",
+					"Undercard","Universal Reformer","Upanishad","Upaya","Uppercut","Vairagya","Vertebrae","Vishal Prajapati","Water Aerobics",
 					"Weigh-in","Weight classes","Welterweight","Wunda Chair","Yoga","Zipper"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the suggestions array as possible autocomplete values:*/
