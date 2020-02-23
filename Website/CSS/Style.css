@@ -10,7 +10,7 @@ body {
 
 h1 {
 	color: gold;
-	font-size: 3.5vw;
+	font-weight: bold;
 	text-shadow: 5px 5px black;
 }
 
@@ -44,6 +44,10 @@ a.nav-text {
 img {
 	border:2px solid black;
 	border-radius: 1%;
+}
+
+#logo {
+	margin: 5%,auto,auto,auto;
 }
 
 #entrybox {
