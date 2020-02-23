@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+	<!-- Make work good on all the dumb browsers -->
+	<meta http-equiv="X-UA-Compatible" content="IE=11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,24 +18,97 @@
   </head>
   
   <body>
-	<!-- Bootstrap responsive navigation bar changes to hamburger icon-->
-	<nav class="navbar navbar-expand-lg">  
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<!-- Bootstrap navigation bar with Club Ex on left and navigation button on the right-->
-		<h2>Club Ex</h2>
-		<div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
-			<ul class="navbar-nav col-md-0 ml-auto">
-				<!-- have to add <li></li> to ever second one or Bootstrap will put them vertical-->
-				<li class="nav-item">		
-					<a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i> About Us</a>
-					<li><a class="nav-link" href="Content.html"><i class="fa fa-home"></i> Home</a></li>
-				</li>
-			</ul>
+	<div class="navtest">
+		<!-- Bootstrap responsive navigation bar changes to hamburger icon-->
+		<nav class="navbar navbar-expand-lg">  
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Bootstrap navigation bar with Club Ex on left and navigation button on the right-->
+			<div class="navtest2">
+				<h1><strong>Club Ex</strong></h1>
+				<div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
+					<ul class="navbar-nav col-md-0 ml-auto">
+						<!-- have to add <li></li> to ever second one or Bootstrap will put them vertical-->
+						<li class="nav-item">		
+						<a class="nav-text nav-link" href="About.html"><i class="fa fa-info-circle"></i> About Us</a>
+						<li><a class="nav-text nav-link" href="Home.html"><i class="fa fa-home"></i> Home</a></li>
+						</li>
+					</ul>
+					<!-- Search bar input field with search button-->
+					<form class="search-bar form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Page Content -->
+	<div class="content-box">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2>Contact Us</h2>
+						<br>
+						<p>Have a query? Send us a message and we will respond to you as quickly as possible.</p>
+					</div>
+				</div>
+				<!-- login form -->
+			<div id="contact-form">
+				<form action="Content.html" method="post" name="contactform" name="" >
+				
+					<!-- Name input box center alignment and required for login-->
+					<div id="entrybox" class="d-flex justify-content-center">				
+						<input id="name" type="text" name="name" size="50" placeholder="Name *" required/>			
+					</div>
+				
+					<!-- Email input box center alignment and required for login-->
+					<div id="entrybox" class="d-flex justify-content-center">
+						<input id="email" type="name" name="email" size="50" placeholder="Email Address *" required/>
+					</div>
+
+					<!-- Message input box center alignment and required for login-->
+					<div id="entrybox" class="d-flex justify-content-center">
+						<textarea class="form-control rounded-0" id="topic" type="name" name="topic" size="2000" placeholder="Message"></textarea>
+					</div>
+					<button class="action-button d-flex justify-content-center" type="submit">Submit</button>
+				</form>
+			</div>
+
+			<!--Google map-->
+			<div id="map-container-google-1" class="g-map z-depth-1-half map-container-5 d-flex justify-content-center">
+				<iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+				style="border:0" allowfullscreen></iframe>
+			</div>
+			
+			</div>
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<div id="contact-container">
+							<div id="contact-box">
+								<p class="contact-title"><i class="fa fa-map-marker"></i> Come See Us</p>	
+								<p class="contact-text">123, 456th Street</p>
+								<p class="contact-text">Digitown</p>
+								<p class="contact-text">Numberland</p>
+							</div>
+							<div id="contact-box">
+								<p class="contact-title"><i class="fa fa-envelope"></i> Email Us</p>	
+								<p class="contact-text">contact@GymEx.com</p>
+							</div>
+							<div id="contact-box">
+								<p class="contact-title"><i class="fa fa-phone"></i> Call Us</p>	
+								<p class="contact-text">12-345-678-90</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</nav>
-    
+	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
