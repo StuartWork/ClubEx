@@ -34,9 +34,18 @@
 								<a class="nav-text nav-link" href="About.html"><i class="fa fa-info-circle"></i> About Us</a>
 								<li><a class="nav-text nav-link" href="ContactUs.html"><i class="fa fa-comments-o"></i> Contact Us</a></li>
 								<a class="nav-text nav-link" href="Stats.html"><i class="fa fa-line-chart"></i> Stats</a>
-								<li><a class="nav-text nav-link" href="Home.html"><i class="fa fa-user"></i> Sign In</a></li>
+								<li><a class="nav-text nav-link" href="Home.html"><i class="fa fa-user"></i> Sign Out</a></li>
 							</li>
 						</ul>
+						<!-- Search bar input fuild with search button-->
+						<form class="form-inline my-2 my-lg-0" autocomplete="off" action="/" method="post" id="newSearch">
+							<div class="autocomplete" style="width:200px;">
+								<input class="form-control mr-sm-2"id="myInput" type="text" placeholder="Search" aria-label="Search">
+							</div>
+							<button class="btn btn-success my-2 my-sm-0" type="submit" id="submit" onclick="searchItem()">Search</button>
+						</form>
+						<script type="text/javascript" src="JS\Search.js"></script>
+						<span id="search_msg"></span>
 					</div>
 				</div>
 			</nav>
@@ -48,7 +57,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-						<h2>Aerobics</h2>
+						<h2 id="aerobics-id">Aerobics</h2>
 						<br>
 					</div>
 				</div>
@@ -141,7 +150,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-						<h2>Boxing</h2>
+						<h2 id="boxing-id">Boxing</h2>
 						<br>
 					</div>
 				</div>
@@ -234,7 +243,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-						<h2>Pilates</h2>
+						<h2 id="pilates-id">Pilates</h2>
 						<br>
 					</div>
 				</div>
@@ -327,7 +336,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-						<h2>Yoga</h2>
+						<h2 id="yoga-id">Yoga</h2>
 						<br>
 					</div>
 				</div>
