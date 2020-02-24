@@ -14,16 +14,35 @@ var listener = addEventListener('blur', function() {
 });
 
 function Like(){
-    likes ++;
-    calculateBar();
+    if(likes == 0){
+        likes ++;
+        calculateBar();
+    }
+    if(likes == 0 && dislikes == 1){
+        likes++;
+        dislikes--;
+        calculateBar();
+    }
+    if(likes ==1 && dislikes == 1){
+        dislikes--;
+        calculateBar();
+    }
 }
 
 function Dislike(){
-    if(dislikes){
-
+    if(dislikes == 0){
+        dislikes++;
+        calculateBar();
     }
-    dislikes ++;
-    calculateBar();
+    if(likes == 1 && dislikes == 0){
+        likes--;
+        dislikes++;
+        calculateBar();
+    }
+    if(likes ==1 && dislikes ==1){
+        likes--;
+        calculateBar();
+    }
 }
 
 function Views(){
