@@ -143,3 +143,35 @@ var suggestions = ["15-Minute Beginner's At-Home Cardio Workout","20min-cardio-A
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the suggestions array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), suggestions);
+
+function searchItem(){
+	var a = document.querySelector("#myInput").value;
+	var newSearch = document.getElementById("newSearch");
+	if (a == "Yoga"){		
+		newSearch.action = "#yoga-id";
+		document.querySelector("#search_msg").innerHTML = ''; 
+		}if (a == "yoga"){		
+			newSearch.action = "#yoga-id";
+			document.querySelector("#search_msg").innerHTML = ''; 
+		}if (a == "Pilates"){		
+		newSearch.action = "#pilates-id";
+		document.querySelector("#search_msg").innerHTML = ''; 
+		}if (a == "pilates"){		
+			newSearch.action = "#pilates-id";
+			document.querySelector("#search_msg").innerHTML = ''; 
+		}else if (a == "Boxing"){		
+		newSearch.action = "#boxing-id";
+		document.querySelector("#search_msg").innerHTML = ''; 
+		}else if (a == "boxing"){		
+			newSearch.action = "#boxing-id";
+			document.querySelector("#search_msg").innerHTML = ''; 
+		}if (a == "aerobics"){		
+		newSearch.action = "#aerobics-id";
+		document.querySelector("#search_msg").innerHTML = ''; 
+		}if (a == "Aerobics"){		
+			newSearch.action = "#aerobics-id";
+			document.querySelector("#search_msg").innerHTML = ''; 
+		}else document.querySelector("#search_msg").innerHTML = 'ERROR';
+			
+}
+
