@@ -11,36 +11,43 @@
 
 		<!-- CSS files have to go under Bootstrap CSS or Bootstrap CSS will over ride them-->
 		<link rel="stylesheet" href="CSS\Style.css" />
-	
+		<link rel="stylesheet" href="CSS\Index.css" />
     <title>Content page</title>	
   </head>
   
   <body>
-	<!-- Bootstrap responsive navigation bar changes to hamburger icon-->
-	<nav class="navbar navbar-expand-lg">  
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<!-- Bootstrap navigation bar with Club Ex on left and navigation button on the right-->
-		<h2>Club Ex</h2>
-		<div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
-			<ul class="navbar-nav col-md-0 ml-auto">
-				<!-- have to add <li></li> to ever second one or Bootstrap will put them vertical-->
-				<li class="nav-item">
-					<a class="nav-link" href="About.html"><i class="fa fa-info-circle"></i> About Us</a>
-					<li><a class="nav-link" href="ContactUs.html"><i class="fa fa-comments-o"></i> Contact Us</a></li>
-				</li>
-			</ul>
+	 <div id="logo">
+		<h1>Club Ex</h1>
+	  </div>
+	  <div class="navtest">
+		<!-- Bootstrap responsive navigation bar changes to hamburger icon-->
+		<nav class="navbar navbar-expand-lg">  
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Bootstrap navigation bar with Club Ex on left and navigation button on the right-->
+			<div class="navtest2">
+				
+				<div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
+					<ul class="navbar-nav col-md-0 ml-auto">
+						<!-- have to add <li></li> to ever second one or Bootstrap will put them vertical-->
+						<li class="nav-item">		
+							<a class="nav-text nav-link" href="ContactUs.html"><i class="fa fa-comments-o"></i> Contact Us</a>
+							<li><a class="nav-text nav-link" href="About.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+						</li>
+					</ul>
 			<!-- Search bar input fuild with search button-->
 			<form class="form-inline my-2 my-lg-0" autocomplete="off" action="/action_page.php">
 				<div class="autocomplete" style="width:200px;">
 				<input class="form-control mr-sm-2"id="myInput" type="text" placeholder="Search" aria-label="Search">
 				</div>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
 			<script type="text/javascript" src="JS\Search.js"></script>
 		</div>
-	</nav>
+			</div>
+		</nav>
+	</div>
 
 	<div id="carousel">
 		<div class="top-content">
@@ -53,7 +60,7 @@
 				</div>
 					<div class="row">
 						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-							<div id="carousel-example" data-interval="false" class="carousel slide">
+							<div id="AerobicsCarousel" data-interval="false" class="carousel slide">
 									<div class="carousel-inner">
 
 										<div class="carousel-item active">
@@ -119,12 +126,12 @@
 											</div>
 										</div>
 									</div>
-										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+										<a class="carousel-control-prev" href="#AerobicsCarousel" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 											<span class="sr-only">Previous</span>
 										</a>
 										
-										<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+										<a class="carousel-control-next" href="#AerobicsCarousel" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
 											<span class="sr-only">Next</span>
 										</a>
@@ -146,7 +153,7 @@
 				</div>
 					<div class="row">
 						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-							<div id="carousel-example" data-interval="false" class="carousel slide">
+							<div id="BoxingCarousel" data-interval="false" class="carousel slide">
 									<div class="carousel-inner">
 
 										<div class="carousel-item active">
@@ -212,12 +219,12 @@
 											</div>
 										</div>
 									</div>
-										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+										<a class="carousel-control-prev" href="#BoxingCarousel" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 											<span class="sr-only">Previous</span>
 										</a>
 										
-										<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+										<a class="carousel-control-next" href="#BoxingCarousel" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
 											<span class="sr-only">Next</span>
 										</a>
@@ -239,7 +246,7 @@
 				</div>
 					<div class="row">
 						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-							<div id="carousel-example" data-interval="false" class="carousel slide">
+							<div id="PilatesCarousel" data-interval="false" class="carousel slide">
 									<div class="carousel-inner">
 
 										<div class="carousel-item active">
@@ -305,12 +312,12 @@
 											</div>
 										</div>
 									</div>
-										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+										<a class="carousel-control-prev" href="#PilatesCarousel" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 											<span class="sr-only">Previous</span>
 										</a>
 										
-										<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+										<a class="carousel-control-next" href="#PilatesCarousel" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
 											<span class="sr-only">Next</span>
 										</a>
@@ -332,7 +339,7 @@
 				</div>
 					<div class="row">
 						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-							<div id="carousel-example" data-interval="false" class="carousel slide">
+							<div id="YogaCarousel" data-interval="false" class="carousel slide">
 									<div class="carousel-inner">
 
 										<div class="carousel-item active">
@@ -398,12 +405,12 @@
 											</div>
 										</div>
 									</div>
-										<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+										<a class="carousel-control-prev" href="#YogaCarousel" role="button" data-slide="prev">
 											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 											<span class="sr-only">Previous</span>
 										</a>
 										
-										<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+										<a class="carousel-control-next" href="#YogaCarousel" role="button" data-slide="next">
 											<span class="carousel-control-next-icon" aria-hidden="true"></span>
 											<span class="sr-only">Next</span>
 										</a>
