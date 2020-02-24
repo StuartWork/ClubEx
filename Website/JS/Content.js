@@ -1,7 +1,7 @@
-var clicks = 0;
-var fired = false;
 var likes = 0;
+var clicks = 0;
 var dislikes = 0;
+var fired = false;
 
 var listener = addEventListener('blur', function() {
 	if(document.activeElement === document.getElementById('iframe')) {
@@ -44,11 +44,6 @@ function Dislike(){
         calculateBar();
     }
 }
-
-function Views(){
-    clicks += 1;
-    document.getElementById("clicks").innerHTML = clicks;
-};
 
 function calculateBar(){
     var total = likes + dislikes;

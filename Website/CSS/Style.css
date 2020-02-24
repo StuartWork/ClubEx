@@ -85,8 +85,12 @@ input {
 	margin-bottom: 20%;
 }
 
-#carousel {	
-	background-color: grey;
+#border {	
+	background-color: #b3ac9c;
+	border-radius: 1%;
+	border-color: black;
+	border-width: thin;
+	border-style: solid;
 }
 
 #description{
