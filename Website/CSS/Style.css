@@ -265,13 +265,13 @@ iframe {
 }
 
 .action-button {
-	margin-left: 42%;
-	width: 15%;
-	position: relative;
+	margin-left: 38%;
+	width: 25%;
+	/* position: relative; */
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-size: 150%;
-	border-radius: 5%;
+	border-radius: 10px;
 	color: white;
 	background-color: gray;
 	padding-bottom: 5px;
@@ -283,4 +283,36 @@ iframe {
 	box-shadow: 10px 10px 10px grey;
 	text-decoration: none;
 	
+}
+
+.login-box {
+	height: 100%;
+	/* border: solid red 2px; */
+}
+
+.login-image-box {
+	display: inline-block;
+	margin: 1%;
+	flex: 1 1 auto;
+	width: 40%;
+	height: 30vh;
+	border-radius: 50px;
+	/* border: black solid thin; */
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+}
+
+.login-form-box {
+	display: inline-block;
+	margin: 1%;
+	/* border: solid red 4px; */
+	padding: 2%;
+	margin-right: 0;
+	width: 55%;
+}
+
+
+.login-image {
+	background-image: url("../images/Logo2.jpg");
 }

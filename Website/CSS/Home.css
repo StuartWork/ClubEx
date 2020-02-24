@@ -1,5 +1,6 @@
 #entrybox {
 	margin-top: 20px;
+	border-radius: 1%;
 }
 section {	
 	background-color: white;
@@ -17,8 +18,30 @@ section {
 	background-color: gray;
 	padding-bottom: 5px;
 }
+
 #login {
 	margin-top: 40px;
+}
+
+#login-box {
+	height: 100%;
+	border: solid red 2px;
+}
+
+#login-image {
+	display: inline-block;
+	background-image: url("../images/FreeWeights.jpg");
+	background-size: auto;
+	height: 40ch;
+	width: 40%;
+	border: solid green 2px;
+	margin-right: 2%;
+}
+
+#login-form-box {
+	border: solid red 4px;
+	display: inline-block;
+	width: 55%;
 }
 
 img {
