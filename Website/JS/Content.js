@@ -19,6 +19,9 @@ function Like(){
 }
 
 function Dislike(){
+    if(dislikes){
+
+    }
     dislikes ++;
     calculateBar();
 }
@@ -27,10 +30,6 @@ function Views(){
     clicks += 1;
     document.getElementById("clicks").innerHTML = clicks;
 };
-
-function test(){
-    fired = false;
-}
 
 function calculateBar(){
     var total = likes + dislikes;
