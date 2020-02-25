@@ -148,16 +148,14 @@ function searchItem(){
 	var search = document.querySelector("#myInput").value;
 	var res = search.toLowerCase();
 	
-	var popup = document.getElementById("myPopup");
-	
 	if (res == "yoga"){		
 		newSearch.action = "#yoga-id";
-		}if (res == "pilates"){		
+		}else if (res == "pilates"){		
 			newSearch.action = "#pilates-id"; 
-		}if (res == "boxing"){		
+		}else if (res == "boxing"){		
 			newSearch.action = "#boxing-id";
-		}if (res == "aerobics"){		
+		}else if (res == "aerobics"){		
 			newSearch.action = "#aerobics-id";
-		}else 	popup.classList.toggle("show");
+		}else 	alert("Sorry no results found.");
 }
 
