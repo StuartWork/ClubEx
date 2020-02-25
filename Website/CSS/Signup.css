@@ -29,6 +29,10 @@ h1 {
 	text-shadow: 5px 5px black;
 }
 
+#logo h1 {
+	font-size: 400%;
+}
+
 h2 {
 	font-weight: bold;
 	text-align: center;
