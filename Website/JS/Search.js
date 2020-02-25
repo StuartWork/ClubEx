@@ -145,33 +145,19 @@ var suggestions = ["15-Minute Beginner's At-Home Cardio Workout","20min-cardio-A
 autocomplete(document.getElementById("myInput"), suggestions);
 
 function searchItem(){
-	var a = document.querySelector("#myInput").value;
-	var newSearch = document.getElementById("newSearch");
-	if (a == "Yoga"){		
+	var search = document.querySelector("#myInput").value;
+	var res = search.toLowerCase();
+	
+	var popup = document.getElementById("myPopup");
+	
+	if (res == "yoga"){		
 		newSearch.action = "#yoga-id";
-		document.querySelector("#search_msg").innerHTML = ''; 
-		}if (a == "yoga"){		
-			newSearch.action = "#yoga-id";
-			document.querySelector("#search_msg").innerHTML = ''; 
-		}if (a == "Pilates"){		
-		newSearch.action = "#pilates-id";
-		document.querySelector("#search_msg").innerHTML = ''; 
-		}if (a == "pilates"){		
-			newSearch.action = "#pilates-id";
-			document.querySelector("#search_msg").innerHTML = ''; 
-		}else if (a == "Boxing"){		
-		newSearch.action = "#boxing-id";
-		document.querySelector("#search_msg").innerHTML = ''; 
-		}else if (a == "boxing"){		
+		}if (res == "pilates"){		
+			newSearch.action = "#pilates-id"; 
+		}if (res == "boxing"){		
 			newSearch.action = "#boxing-id";
-			document.querySelector("#search_msg").innerHTML = ''; 
-		}if (a == "aerobics"){		
-		newSearch.action = "#aerobics-id";
-		document.querySelector("#search_msg").innerHTML = ''; 
-		}if (a == "Aerobics"){		
+		}if (res == "aerobics"){		
 			newSearch.action = "#aerobics-id";
-			document.querySelector("#search_msg").innerHTML = ''; 
-		}else document.querySelector("#search_msg").innerHTML = 'ERROR';
-			
+		}else 	popup.classList.toggle("show");
 }
 
