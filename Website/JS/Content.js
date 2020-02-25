@@ -3,7 +3,6 @@
 var clicks = 0;
 var fired = false;
 
-windows.onload = function(){
 var listener = addEventListener('blur', function() {
 	if(document.activeElement === document.getElementById('iframe')) {
         if (!fired){
@@ -13,7 +12,6 @@ var listener = addEventListener('blur', function() {
         fired = true;
     }
 });
-};
 
 var likes = 0;
 var dislikes = 0;
