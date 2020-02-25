@@ -129,26 +129,26 @@ input {
 	border-radius: 50%;
 }
 
-#likes{
+#likes, #likes1, #likes2, #likes3, #likes4, #likes5, #likes6, #likes7, #likes8, #likes9, #likes10, #likes11{
 	height:5px;
 	width:50%;
 	background:green;
 	float:left;
 	
 }
-#dislikes{
+#dislikes, #dislikes1, #dislikes2, #dislikes3, #dislikes4, #dislikes5, #dislikes6, #dislikes7, #dislikes8, #dislikes9, #dislikes10, #dislikes11{
 	height:5px;
 	width:50%;
 	background:red;
 	float:right;
 }
 
-.LikeButton {
+.LikeButton, .LikeButton1, .LikeButton2, .LikeButton3, .LikeButton4, .LikeButton5, .LikeButton6, .LikeButton7, .LikeButton8, .LikeButton9, .LikeButton10, .LikeButton11 {
 	width: 50%;
 	float: left;
 }
 
-.DislikeButton {
+.DislikeButton, .DislikeButton1, .DislikeButton2, .DislikeButton3, .DislikeButton4, .DislikeButton5, .DislikeButton6, .DislikeButton7, .DislikeButton8, .DislikeButton9, .DislikeButton10, .DislikeButton11 {
 	width: 50%;
 	float: right;
 }
