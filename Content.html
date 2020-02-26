@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Font awesomee icons CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<!-- CSS files have to go under Bootstrap CSS or Bootstrap CSS will over ride them-->
+		<link rel="stylesheet" href="CSS\Style.css" />
+		<link rel="stylesheet" href="CSS\Index.css" />
+    <title>Content page</title>	
+  </head>
+  
+  <body>
+		<div id="logo">
+			<h1>Club Ex</h1>
+		</div>
+		<div class="navtest">
+			<!-- Bootstrap responsive navigation bar changes to hamburger icon-->
+			<nav class="navbar navbar-expand-lg">  
+				<button class="navbar-toggler navbar-dark" style="background-color: #40403e;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Bootstrap navigation bar with Club Ex on left and navigation button on the right-->
+				<div class="navtest2">
+					<div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
+						<ul class="navbar-nav col-md-0 ml-auto">
+							<!-- have to add <li></li> to ever second one or Bootstrap will put them vertical-->
+							<li class="nav-item">		
+								<a class="nav-text nav-link" href="AboutSignedIn.html"><i class="fa fa-info-circle"></i> About Us</a>
+								<li><a class="nav-text nav-link" href="ContactUsSignedIn.html"><i class="fa fa-comments-o"></i> Contact Us</a></li>
+								<a class="nav-text nav-link" href="StatsSignedIn.html"><i class="fa fa-line-chart"></i> Stats</a>
+								<li><a class="nav-text nav-link" href="Home.html"><i class="fa fa-user"></i> Sign Out</a></li>
+							</li>
+						</ul>
+						<!-- Search bar input fuild with search button-->
+						<form class="form-inline my-2 my-lg-0" autocomplete="off" method="post" id="newSearch">
+							<div class="autocomplete popup" style="width:200px;">
+								<input class="form-control mr-sm-2"id="myInput" type="text" placeholder="Search" aria-label="Search">
+							</div>
+							<button class="btn btn-success my-2 my-sm-0" type="submit" id="submit" onclick="searchItem()">Search</button>
+						</form>
+						<script type="text/javascript" src="JS\Search.js"></script>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+	<div id=border>
+	<div id="carousel">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2 class="text-warning display-4 font-weight-bolder">Content</h2>
+						<h4 class="col text-center text-dark"><strong>Welcome to the Club Ex Content Page</strong></h4>
+						<h6 class="col text-center text-dark">Select a video of your choice from the list of activities below,
+							get into your gym kit and exercise along with our professional instructors.</h6>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2 id="aerobics-id">Aerobics</h2>
+						<br>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<div id="AerobicsCarousel" data-interval="false" class="carousel slide">
+									<div class="carousel-inner">
+
+										<div class="carousel-item active">
+											<div id="description">
+												<p>Aerobics is a form of physical exercise that combines rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness (flexibility, muscular strength, and cardio-vascular fitness). </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe" class="embed-responsive-item" src="https://www.youtube.com/embed/965qZScyVVI" allowfullscreen></iframe>
+											</div>
+												<div id="buttons">
+													<div id="likes"></div>
+													<div id="dislikes"></div>
+
+													<input class="LikeButton" type="button" value="Likes(0)" id="LikeButton" onclick="Like();"/>	
+													<input class="DislikeButton" type="button" value="Dislikes(0)" id="DislikeButton" onclick="Dislike();"/>
+												</div>
+
+												<div id="caption">
+													<p>Aerobics dance exercise | aerobics for beginners | Vishal Prajapati | 2018</p>	
+													<p><a id="clicks"> 0 </a> Views</p>
+												</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Aerobics is a form of physical exercise that combines rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness (flexibility, muscular strength, and cardio-vascular fitness). </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe1" class="embed-responsive-item" src="https://www.youtube.com/embed/VHyGqsPOUHs" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes1"></div>
+												<div id="dislikes1"></div>
+
+												<input class="LikeButton1" type="button" value="Likes(0)" id="LikeButton1" onclick="Like1();"/>	
+												<input class="DislikeButton1" type="button" value="Dislikes(0)" id="DislikeButton1" onclick="Dislike1();"/>
+											</div>
+
+											<div id="caption">
+												<p>15-Minute Beginner's At-Home Cardio Workout | Class FitSugar</p>	
+												<p><a id="clicks1"> 0 </a> Views</p>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Aerobics is a form of physical exercise that combines rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness (flexibility, muscular strength, and cardio-vascular fitness). </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe2" class="embed-responsive-item" src="https://www.youtube.com/embed/uO5OkT6hPok" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes2"></div>
+												<div id="dislikes2"></div>
+
+												<input class="LikeButton2" type="button" value="Likes(0)" id="LikeButton2" onclick="Like2();"/>	
+												<input class="DislikeButton2" type="button" value="Dislikes(0)" id="DislikeButton2" onclick="Dislike2();"/>
+											</div>
+
+											<div id="caption">
+												<p>Hi-Low cardio aerobics-burn over 700 calories in just 20min-cardio-Aerobics</p>	
+												<p><a id="clicks2"> 0 </a> Views</p>
+											</div>
+										</div>
+									</div>
+										<a class="carousel-control-prev" href="#AerobicsCarousel" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										
+										<a class="carousel-control-next" href="#AerobicsCarousel" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="carousel">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2 id="boxing-id">Boxing</h2>
+						<br>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<div id="BoxingCarousel" data-interval="false" class="carousel slide">
+									<div class="carousel-inner">
+
+										<div class="carousel-item active">
+											<div id="description">
+												<p>Boxing is a combat sport in which two people, usually wearing protective gloves, throw punches at each other for a predetermined amount of time in a boxing ring. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe3" class="embed-responsive-item" src="https://www.youtube.com/embed/kbgkeTTSau8" allowfullscreen></iframe>
+											</div>
+												<div id="buttons">
+													<div id="likes3"></div>
+													<div id="dislikes3"></div>
+
+													<input class="LikeButton3" type="button" value="Likes(0)" id="LikeButton3" onclick="Like3();"/>	
+													<input class="DislikeButton3" type="button" value="Dislikes(0)" id="DislikeButton3" onclick="Dislike3();"/>
+												</div>
+
+												<div id="caption">
+													<p>30 Minute Boxing Heavy Bag HIIT Workout</p>	
+													<p><a id="clicks3"> 0 </a> Views</p>
+												</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Boxing is a combat sport in which two people, usually wearing protective gloves, throw punches at each other for a predetermined amount of time in a boxing ring.  </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe4" class="embed-responsive-item" src="https://www.youtube.com/embed/jCTEVKRTuS8" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes4"></div>
+												<div id="dislikes4"></div>
+
+												<input class="LikeButton4" type="button" value="Likes(0)" id="LikeButton4" onclick="Like4();"/>	
+												<input class="DislikeButton4" type="button" value="Dislikes(0)" id="DislikeButton4" onclick="Dislike4();"/>
+											</div>
+
+											<div id="caption">
+												<p>30-Minute At-Home Boxing Workout</p>	
+												<p><a id="clicks4"> 0 </a> Views</p>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Boxing is a combat sport in which two people, usually wearing protective gloves, throw punches at each other for a predetermined amount of time in a boxing ring.  </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe5" class="embed-responsive-item" src="https://www.youtube.com/embed/pWLEkO0MlXs" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes5"></div>
+												<div id="dislikes5"></div>
+
+												<input class="LikeButton5" type="button" value="Likes(0)" id="LikeButton5" onclick="Like5();"/>	
+												<input class="DislikeButton5" type="button" value="Dislikes(0)" id="DislikeButton5" onclick="Dislike5();"/>
+											</div>
+
+											<div id="caption">
+												<p>15-Minute Boxing Workout You Can Do At Home | Class FitSugar</p>	
+												<p><a id="clicks5"> 0 </a> Views</p>
+											</div>
+										</div>
+									</div>
+										<a class="carousel-control-prev" href="#BoxingCarousel" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										
+										<a class="carousel-control-next" href="#BoxingCarousel" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="carousel">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2 id="pilates-id">Pilates</h2>
+						<br>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<div id="PilatesCarousel" data-interval="false" class="carousel slide">
+									<div class="carousel-inner">
+
+										<div class="carousel-item active">
+											<div id="description">
+												<p>Pilates is a method of exercise that consists of low-impact flexibility and muscular strength and endurance movements. Pilates emphasizes proper postural alignment, core strength and muscle balance.  </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe6" class="embed-responsive-item" src="https://www.youtube.com/embed/AP4NjplLHwY" allowfullscreen></iframe>
+											</div>
+												<div id="buttons">
+													<div id="likes6"></div>
+													<div id="dislikes6"></div>
+
+													<input class="LikeButton6" type="button" value="Likes(0)" id="LikeButton6" onclick="Like6();"/>	
+													<input class="DislikeButton6" type="button" value="Dislikes(0)" id="DislikeButton6" onclick="Dislike6();"/>
+												</div>
+
+												<div id="caption">
+													<p>Ballet Pilates: Dancer's Workout For Total Body Fitness</p>	
+													<p><a id="clicks6"> 0 </a> Views</p>
+												</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Pilates is a method of exercise that consists of low-impact flexibility and muscular strength and endurance movements. Pilates emphasizes proper postural alignment, core strength and muscle balance.  </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe7" class="embed-responsive-item" src="https://www.youtube.com/embed/RDQmnzuE2q4" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes7"></div>
+												<div id="dislikes7"></div>
+
+												<input class="LikeButton7" type="button" value="Likes(0)" id="LikeButton7" onclick="Like7();"/>	
+												<input class="DislikeButton7" type="button" value="Dislikes(0)" id="DislikeButton7" onclick="Dislike7();"/>
+											</div>
+
+											<div id="caption">
+												<p>25-Minute Pilates Workout to Tone Your Abs, Butt, and Arms | Class FitSugar</p>	
+												<p><a id="clicks7"> 0 </a> Views</p>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Pilates is a method of exercise that consists of low-impact flexibility and muscular strength and endurance movements. Pilates emphasizes proper postural alignment, core strength and muscle balance.  </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe8" class="embed-responsive-item" src="https://www.youtube.com/embed/K-PpDkbcNGo" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes8"></div>
+												<div id="dislikes8"></div>
+
+												<input class="LikeButton8" type="button" value="Likes(0)" id="LikeButton8" onclick="Like8();"/>	
+												<input class="DislikeButton8" type="button" value="Dislikes(0)" id="DislikeButton8" onclick="Dislike8();"/>
+											</div>
+
+											<div id="caption">
+												<p>Total Body Pilates! 20 Minute Tone & Shape, Legs, Butt, Abs, Beginners Home Workout, Flexib</p>	
+												<p><a id="clicks8"> 0 </a> Views</p>
+											</div>
+										</div>
+									</div>
+										<a class="carousel-control-prev" href="#PilatesCarousel" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										
+										<a class="carousel-control-next" href="#PilatesCarousel" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="carousel">
+		<div class="top-content">
+			<div class="container">
+				<div class="row">
+					<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2 id="yoga-id">Yoga</h2>
+						<br>
+					</div>
+				</div>
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<div id="YogaCarousel" data-interval="false" class="carousel slide">
+									<div class="carousel-inner">
+
+										<div class="carousel-item active">
+											<div id="description">
+												<p>Yoga is a systematic practice of physical exercise, breath control, relaxation, diet control, and positive thinking and meditation aimed at developing harmony in the body, mind, and environment. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe9" class="embed-responsive-item" src="https://www.youtube.com/embed/v7AYKMP6rOE" allowfullscreen></iframe>
+											</div>
+												<div id="buttons">
+													<div id="likes9"></div>
+													<div id="dislikes9"></div>
+
+													<input class="LikeButton9" type="button" value="Likes(0)" id="LikeButton9" onclick="Like9();"/>	
+													<input class="DislikeButton9" type="button" value="Dislikes(0)" id="DislikeButton9" onclick="Dislike9();"/>
+												</div>
+
+												<div id="caption">
+													<p>Yoga For Complete Beginners - 20 Minute Home Yoga Workout!</p>	
+													<p><a id="clicks9"> 0 </a> Views</p>
+												</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Yoga is a systematic practice of physical exercise, breath control, relaxation, diet control, and positive thinking and meditation aimed at developing harmony in the body, mind, and environment. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe10" class="embed-responsive-item" src="https://www.youtube.com/embed/WmSIMpIDa_A" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes10"></div>
+												<div id="dislikes10"></div>
+
+												<input class="LikeButton10" type="button" value="Likes(0)" id="LikeButton10" onclick="Like10();"/>	
+												<input class="DislikeButton10" type="button" value="Dislikes(0)" id="DislikeButton10" onclick="Dislike10();"/>
+											</div>
+
+											<div id="caption">
+												<p>Yoga for Weight Loss & Belly Fat, Complete Beginners Fat Burning Workout at Home, Exercise Routine</p>	
+												<p><a id="clicks10"> 0 </a> Views</p>
+											</div>
+										</div>
+
+										<div class="carousel-item">
+											<div id="description">
+												<p>Yoga is a systematic practice of physical exercise, breath control, relaxation, diet control, and positive thinking and meditation aimed at developing harmony in the body, mind, and environment. </p>	
+											</div>
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe id="iframe11" class="embed-responsive-item" src="https://www.youtube.com/embed/t7RhG0CEbVw" allowfullscreen></iframe>
+											</div>
+											<div id="buttons">
+												<div id="likes11"></div>
+												<div id="dislikes11"></div>
+
+												<input class="LikeButton11" type="button" value="Likes(0)" id="LikeButton11" onclick="Like11();"/>	
+												<input class="DislikeButton11" type="button" value="Dislikes(0)" id="DislikeButton11" onclick="Dislike11();"/>
+											</div>
+
+											<div id="caption">
+												<p>Yoga Weight Loss Challenge! 20 Minute Fat Burning Yoga Workout Beginners & Intermediate</p>	
+												<p><a id="clicks11"> 0 </a> Views</p>
+											</div>
+										</div>
+									</div>
+										<a class="carousel-control-prev" href="#YogaCarousel" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										
+										<a class="carousel-control-next" href="#YogaCarousel" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<script src="JS/Content.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+	
+	</body>
+</html>
