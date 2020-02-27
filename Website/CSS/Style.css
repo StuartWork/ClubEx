@@ -217,13 +217,16 @@ input {
 }
 
 .user-image-one {
-	background-image: url("../images/Logo2.jpg");
+	background-image: url("../images/Logo.jpg");
 }
 
 .user-image-two {
-	background-image: url("../images/Logo2.jpg");
+	background-image: url("../images/Logo3.jpg");
 }
 
+.user-image-three {
+	background-image: url("../images/Logo4.jpg");
+}
 
 
 #team-profile-text {
